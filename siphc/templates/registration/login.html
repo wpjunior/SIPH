@@ -1,0 +1,65 @@
+{% extends "master/admin-login.html" %}
+{% load i18n %}
+{% block header %}
+<script type="text/javascript" src="/media/js/custom.login.js"></script>
+{% endblock %}
+
+{% block content %}
+<div id="login" class="ui-corner-all login-middle">
+  <div class="login-entrar" >
+		<b>Entrar</b>
+		no Lethus
+	</div>
+  <form id="form" method="post" enctype="multipart/form-data" action="{% url django.contrib.auth.views.login %}">
+    {% csrf_token %}
+    {% if form.errors %}
+    <div class="message errormsg"  style="width: 320px;">
+      <p>Oops!  Seu Usuário e Senha não estão corretos.</p>
+    </div>
+    {% endif %}
+
+<div class="login-form">
+		<div class="login-f-left">
+			<div class="login-label-txt">
+				USUÁRIO
+			</div>
+			<div class="login-text-wrap">
+				<input class="login-textbox" id="id_username" required="required" tabindex="1" name="username" type="text" />
+			</div>
+			<div class="login-lembrar">
+				<div class="login-lembrar-left">
+					<input id="chkLembrar" name="chkLembrar" value="1" type="checkbox" />
+				</div>
+				<div class="login-lembrar-right">
+					<label>
+						Lembrar-me por 2 semanas.
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="login-f-middle">
+			<div class="login-label-txt">
+				SENHA
+			</div>
+			<div class="login-text-wrap">
+				<input class="login-textbox" id="id_password" required="required" tabindex="2" name="password" type="password" />
+			</div>
+			<div class="login-recuperar-senha">
+				<a class="noajax" href="/recuperar-senha/">Esqueceu sua senha ?</a>
+			</div>
+		</div>
+		<div class="login-f-right">
+			<input tabindex="3" src="/media/img/login-entrar.png" type="image" />
+		</div>
+	</div>
+		<div class="clear"></div>
+		<div class="login-traco"></div>
+		<div class="login-logo">
+			<a href="http://lethus.com.br/">
+				<img alt="logo lethus" src="/media/img/logo-lethus.png" />
+			</a>
+		</div>
+
+  </form>
+</div>
+{% endblock %}
