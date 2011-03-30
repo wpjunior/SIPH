@@ -1,0 +1,108 @@
+#main-menu-container{
+	position: relative;
+	height: 35px;
+}
+#main-menu{
+	background: transparent url('/media/img/menu/main-menu-bg.png') no-repeat left top;
+	list-style: none;
+    position: absolute;
+    margin: 0 auto;
+    padding: 1px 10px 2px;
+    width: 960px;
+    height: 44px;
+}
+#main-menu li {
+	position: relative;
+    float: left;
+    height: 41px;
+    line-height: 41px;
+    font: 11px/41px verdana;
+    text-transform: uppercase;
+    border: none;
+    color:#e9e7e9;
+    background: transparent url('/media/img/menu/main-menu-li-bg.png') no-repeat left top
+}
+#main-menu li a {
+    display: block;
+    padding: 0 20px;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: right center;
+    color:#e9e7e9;
+    text-decoration: none;
+}
+#main-menu .logo {
+    float: left;
+    margin-top: 8px;
+    padding-right: 8px;
+}
+#main-menu .user {
+    float: right;
+    padding-right: 20px;
+}
+#main-menu .user span{
+    padding-right: 5px;
+}
+#main-menu li:hover {
+    background: transparent url('/media/img/menu/main-menu-li-bg.png') repeat-x left bottom;
+    text-decoration: none;
+}
+#main-menu li a.has-submenu {
+    padding-right: 29px;
+    background-image: url('/media/img/menu/dropdown-arrow.png');
+}
+#main-menu li ul {
+    display: none;
+    position: absolute; 
+    top: 41px;
+    left: 0px;
+    width: 230px;
+    background: #2c252c;
+    border: 1px solid #15161b;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    text-align: left;
+    padding-left: 0px;
+    z-index: 3000;
+}
+#main-menu li ul li {
+    position: relative;
+    float: none;
+    display: block;
+    padding: 0;
+    padding-left: 15px;
+    height: 37px;
+    line-height: 37px;
+    font: 11px/37px verdana;
+    /*font-size: 11px;*/
+    border: none;
+    background-repeat: no-repeat;
+    background-position: right center;
+    text-transform: none;
+}
+#main-menu li ul li a {
+    background-position: -100% -100%; /* Gets rid of parents background image */
+    padding: 0px;
+}
+#main-menu li ul li:hover {
+    background-color: #282227;
+    background-image: none;
+}
+#main-menu li ul li.sub-has-sub {
+    background-image: url('/media/img/menu/dropdown-right-arrow.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+#main-menu li ul li ul {
+    display: none;
+    position: absolute; 
+    top: -1px;
+    left: 230px;
+    width: 230px;
+    background: #2c252c;
+    border: 1px solid #15161b;
+}

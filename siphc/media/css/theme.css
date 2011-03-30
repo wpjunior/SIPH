@@ -1,0 +1,72 @@
+body {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px; font-size: 100%;
+}
+.middle {
+    margin: 0px auto; width: 960px;
+}
+.font1 {
+    font-family: "Droid Sans", Helvetica, arial, sans-serif; font-size: 12px;
+}
+form {
+    margin: 0px; padding: 0px; outline: 0px; border: 0px; font-size: 100%;
+}
+label {
+    margin: 0px; padding: 0px; outline: 0px; border: 0px; font-size: 100%;
+}
+.clear {
+    margin: 0px; padding: 0px; clear: both;
+}
+:focus {
+    outline: 0px;
+}
+
+.login-middle {
+    margin: 0px auto; padding: 150px 150px 0px 150px; width: 600px;
+}
+.login-form {
+    padding: 12px 0px 0px;
+}
+.login-f-left {
+    width: 220px; float: left;
+}
+.login-f-middle {
+    padding: 0px 0px 0px 15px; width: 220px; float: left;
+}
+.login-f-right {
+    padding: 18px 0px 0px 5px; width: 130px; float: left;
+}
+.login-label-txt {
+    margin: 0px 0px 3px 3px; color: rgb(74, 74, 74); font-weight: 700; text-shadow: -1px 1px 0 #e9e9e9;
+}
+.login-textbox {
+    background: url("/media/img/login-textbox.png") no-repeat; padding: 10px; border: 0px; width: 204px; color: rgb(76, 76, 76); font-size: 14px; font-weight: 700; text-shadow: -1px 1px 0 #F0F0F0;
+}
+.login-textbox-hover {
+    background: url("/media/img/login-textbox-hover.png") no-repeat;
+}
+.login-lembrar {
+    padding: 7px 0px 0px;
+}
+.login-lembrar-left {
+    margin: 0px 0px 0px -2px; float: left;
+}
+.login-lembrar-right {
+    padding: 4px 0px 0px 5px; color: rgb(76, 76, 76); float: left; text-shadow: -1px 1px 0 #F0F0F0;
+}
+.login-recuperar-senha {
+    padding: 10px 0px 0px 5px;
+}
+.login-recuperar-senha a {
+    color: rgb(76, 76, 76); text-decoration: underline; text-shadow: -1px 1px 0 #F0F0F0;
+}
+.login-traco {
+    background: rgb(188, 188, 188); margin: 10px 0px 10px 1px; width: 570px; height: 1px; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.login-logo {
+    padding: 260px 0px 0px; text-align: center;
+}
+
+
+
+
+

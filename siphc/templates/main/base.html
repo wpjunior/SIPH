@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{% block title %}SIPH{% endblock %}</title>
+
+<link rel="stylesheet" type="text/css" href="/media/css/theme.css">
+<link rel="stylesheet" type="text/css" href="/media/css/menu.css">
+
+<script type="text/javascript" src="/media/js/jquery.min.js"></script>
+<script type="text/javascript" src="/media/js/jquery.tools.min.js"></script>
+<script type="text/javascript" src="/media/js/menu/jquery.hoverIntent.minified.js"></script>
+<script type="text/javascript" src="/media/js/menu/main-menu.js"></script>
+
+ {{ form.media }}
+ {% block header %} {% endblock %}
+ 
+</head>
+<body class="login-body">
+	<div class="middle font1">
+	<br class="clear" />
+        <div id="main-menu-container">
+            <ul id="main-menu">
+                <!--<p class="logo">
+                    <span><a href="/"><img src="/media/img/logo-lethus2.png" alt="logo lethus" title="Ir para tela inicial" /></a></span>
+                </p>-->		
+		<li>
+		  <a href="#" class="has-submenu">Admin</a>
+		  <ul style="display: block;">
+                    <li><a href="/admin/superusers/">Manage Staff</a></li>
+                  </ul>
+		</li>
+		
+                <p class="user">
+                    <span><a href="/"><img src="/media/img/menu/home.png" alt="Home" title="Ir tela inicial" /></a></span>
+                    <span><a href="/minhaconta/"><img src="/media/img/menu/user.png" alt="Minha Conta" title="Minha Conta" /></a></span>
+                    <span><a href="/auth/logout/"><img src="/media/img/menu/logout.png" alt="Sair" title="Sair" /></a></span>
+                </p>
+            </ul>
+        </div>
+	
+		{% block content %} {% endblock %}
+	</div>
+</body>
+</html>
